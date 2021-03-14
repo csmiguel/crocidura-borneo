@@ -1,0 +1,7 @@
+
+/etc
+/test
+/manuscript
+*DS_Store
+.Rhistory
+Rplot.pdf
