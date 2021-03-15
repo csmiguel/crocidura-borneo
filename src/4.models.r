@@ -26,6 +26,9 @@ hair_table <-
     "guard-hair" = mhair_guar,
     "longest guard hair" = mhair_long,
     digits = 5)
+sink("output/models_hair")
+hair_table
+sink()
 
 #Size of skull and relative tail length increase with elevation.
 # I have not controlled for sex, but I can add it as random factor:

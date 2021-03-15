@@ -1,0 +1,20 @@
+
+Calls:
+mid-dorsum: lm(formula = hair_middorsum ~ elevation, data = wide_allAges)
+guard-hair: lm(formula = guard.hairs..mm. ~ elevation, data = wide_allAges)
+longest guard hair: lm(formula = longest.guard.hair..mm. ~ elevation, data = wide_allAges)
+
+==========================================================================
+                 mid-dorsum       guard-hair       longest guard hair     
+              --------------- ----------------- ------------------------   
+               hair_middorsum  guard.hairs..mm.  longest.guard.hair..mm.  
+--------------------------------------------------------------------------
+  (Intercept)    3.04498***       3.90829***            4.27996***        
+                (0.28812)        (0.52521)             (0.52724)          
+  elevation      0.00148***       0.00196***            0.00195***        
+                (0.00015)        (0.00024)             (0.00024)          
+--------------------------------------------------------------------------
+  R-squared      0.67377          0.72760               0.72456           
+  N             48               28                    28                 
+==========================================================================
+  Significance: *** = p < 0.001; ** = p < 0.01; * = p < 0.05  

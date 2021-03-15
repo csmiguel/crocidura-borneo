@@ -16,19 +16,19 @@ tidy_data <- readRDS("intermediate/tidy_data.rds")
 
 #produce individuals plots
 p1 <-
-  ggplot(dplyr::filter(tidy_data, morph == "tail")) +
+  ggplot(dplyr::filter(tidy_data, morph == "tail" & age_expanded == 1)) +
   geom_point(aes(x = elevation, y = mm, color = sp_label)) +
   scale_color_manual(values = c("#0A0089", "#8BE0FB7D")) +
   stat_smooth(aes(x = elevation, y = mm), method = "lm", formula = y ~ x) +
   theme_classic()
 p2 <-
-  ggplot(dplyr::filter(tidy_data, morph == "HF")) +
+  ggplot(dplyr::filter(tidy_data, morph == "HF" & age_expanded == 1)) +
   geom_point(aes(x = elevation, y = mm, color = sp_label)) +
   scale_color_manual(values = c("#0A0089", "#8BE0FB7D")) +
   stat_smooth(aes(x = elevation, y = mm), method = "lm", formula = y ~ x) +
   theme_classic()
 p3 <-
-  ggplot(dplyr::filter(tidy_data, morph == "GGLS")) +
+  ggplot(dplyr::filter(tidy_data, morph == "GGLS" & age_expanded == 1)) +
   geom_point(aes(x = elevation, y = mm, color = sp_label)) +
   scale_color_manual(values = c("#0A0089", "#8BE0FB7D")) +
   stat_smooth(aes(x = elevation, y = mm), method = "lm", formula = y  ~ x) +
